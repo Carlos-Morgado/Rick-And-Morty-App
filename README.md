@@ -1,2 +1,2 @@
 # Rick-Morty-App
-This project is about to build a Rick and Morty themed iOS app using Swift and UIKit.
+This project is about a Swift implementation to the Rick and Morty API using UIKit.
