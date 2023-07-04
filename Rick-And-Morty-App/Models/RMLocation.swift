@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+/// MODELS represents a data type, an object that represents some data, it could be from an API, it could just be some local object
