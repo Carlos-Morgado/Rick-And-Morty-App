@@ -22,7 +22,7 @@ final class RMRequest {
     // Query parameters (parámetros de consulta)
     private let queryParameters: [URLQueryItem]
     
-    /// Constructed url for the api request in string format
+    /// Constructed url for the api request in string format. Computed property
     private var urlString: String {
         var string = Constants.baseUrl
         string += "/"
