@@ -16,7 +16,7 @@ final class RMRequest {
     private let endpoint: RMEndpoint
     
     /// Path components (componentes de la ruta). Path components for API, if any
-    private let pathComponents: Set<String>
+    private let pathComponents: [String]
     
     /// Query parameters (parámetros de consulta). Query arguments for API, if any
     private let queryParameters: [URLQueryItem]
@@ -57,11 +57,16 @@ final class RMRequest {
     ///     - queryParameters: Collection of query parameters
     public init(
         endpoint: RMEndpoint,
-        pathComponents: Set<String> = [],
+        pathComponents: [String] = [],
         queryParameters: [URLQueryItem] = []
     ) {
         self.endpoint = endpoint
         self.pathComponents = pathComponents
         self.queryParameters = queryParameters
     }
+}
+
+
+extension RMRequest {
+    static let listCharacterRequests = RMRequest(endpoint: .character)
 }
