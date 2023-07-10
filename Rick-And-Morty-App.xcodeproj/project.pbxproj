@@ -33,6 +33,7 @@
 		C4E47EE22A56FE110045E85B /* RMGetAllCharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47EE12A56FE110045E85B /* RMGetAllCharactersResponse.swift */; };
 		C4F7D8E22A5808DC00AD4613 /* CharacterListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7D8E12A5808DC00AD4613 /* CharacterListViewViewModel.swift */; };
 		C4F7D8E42A580AA400AD4613 /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7D8E32A580AA400AD4613 /* CharacterListView.swift */; };
+		C4F7D8E62A581B6600AD4613 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7D8E52A581B6600AD4613 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		C4E47EE12A56FE110045E85B /* RMGetAllCharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMGetAllCharactersResponse.swift; sourceTree = "<group>"; };
 		C4F7D8E12A5808DC00AD4613 /* CharacterListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewViewModel.swift; sourceTree = "<group>"; };
 		C4F7D8E32A580AA400AD4613 /* CharacterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListView.swift; sourceTree = "<group>"; };
+		C4F7D8E52A581B6600AD4613 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				C4C24BB82A52C04100222F9C /* AppDelegate.swift */,
 				C4C24BBA2A52C04100222F9C /* SceneDelegate.swift */,
 				C4C24BC32A52C04100222F9C /* LaunchScreen.storyboard */,
+				C4F7D8E52A581B6600AD4613 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				C4C24BB92A52C04100222F9C /* AppDelegate.swift in Sources */,
 				C4C24BBB2A52C04100222F9C /* SceneDelegate.swift in Sources */,
 				C4C24BE82A52D14F00222F9C /* RMSettingsViewController.swift in Sources */,
+				C4F7D8E62A581B6600AD4613 /* Extensions.swift in Sources */,
 				C4C3A99B2A54049900F2EAE3 /* RMService.swift in Sources */,
 				C4C24BD42A52CEAD00222F9C /* RMLocation.swift in Sources */,
 				C4C3A99F2A540CC900F2EAE3 /* RMEndpoint.swift in Sources */,
