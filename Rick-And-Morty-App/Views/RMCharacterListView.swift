@@ -13,7 +13,7 @@ protocol RMCharacterListViewDelegate: AnyObject {
 
 /// View that handles showing list of characters, loader... etc
 final class RMCharacterListView: UIView {
-    public weak var delegate: RMCharacterListViewDelegate?
+    weak var delegate: RMCharacterListViewDelegate?
     
     private let viewModel = RMCharacterListViewViewModel()
     
@@ -70,10 +70,6 @@ final class RMCharacterListView: UIView {
         collectionView.delegate = viewModel
     }
 }
-
-
-
-
 
 // MARK: - Extensions
 

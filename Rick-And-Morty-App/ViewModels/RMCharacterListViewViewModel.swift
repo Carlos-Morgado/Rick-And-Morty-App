@@ -16,7 +16,7 @@ protocol RMCharacterListViewViewModelDelegate: AnyObject {
 
 /// View Model to handle character list view logic
 final class RMCharacterListViewViewModel: NSObject {
-    public weak var delegate: RMCharacterListViewViewModelDelegate?
+    weak var delegate: RMCharacterListViewViewModelDelegate?
     
     private var characters: [RMCharacter] = [] {
         didSet {
@@ -32,7 +32,7 @@ final class RMCharacterListViewViewModel: NSObject {
     private var apiInfo: RMGetAllCharactersResponse.Info? = nil
     
     /// Fetch initial set of characters (20)
-    public func fetchCharacters() {
+    func fetchCharacters() {
         RMService.shared.execute(.listCharacterRequests, expecting: RMGetAllCharactersResponse.self) { [weak self] result in
             switch result {
             case .success(let responseModel):
@@ -50,11 +50,11 @@ final class RMCharacterListViewViewModel: NSObject {
     }
     
     /// Paginate if additional characters are needed
-    public func fetchAdditionalCharacters() {
+    func fetchAdditionalCharacters() {
         // Fetch additional characters
     }
     
-    public var shouldShowLoadMoreIndicator: Bool {
+    var shouldShowLoadMoreIndicator: Bool {
         return apiInfo?.next != nil
     }
 }

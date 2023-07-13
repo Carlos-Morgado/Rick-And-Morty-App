@@ -14,7 +14,7 @@ final class RMCharacterDetailViewViewModel {
         self.character = character
     }
     
-    public var title: String {
+    var title: String {
         character.name.uppercased()
     }
 }

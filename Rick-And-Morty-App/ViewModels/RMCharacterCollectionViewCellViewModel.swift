@@ -8,7 +8,7 @@
 import Foundation
 
 final class RMCharacterCollectionViewCellViewModel {
-    public let characterName: String
+    let characterName: String
     private let characterStatus: RMCharacterStatus
     private let characterImageUrl: URL?
 
@@ -20,11 +20,11 @@ final class RMCharacterCollectionViewCellViewModel {
         self.characterImageUrl = characterImageUrl
     }
     
-    public var characterStatusText: String {
+    var characterStatusText: String {
         return "Status: \(characterStatus.text)"
     }
     
-    public func fetchImage(completion: @escaping (Result<Data, Error>) -> Void) {
+    func fetchImage(completion: @escaping (Result<Data, Error>) -> Void) {
         guard let url = characterImageUrl else {
             completion(.failure(URLError(.badURL)))
             return
