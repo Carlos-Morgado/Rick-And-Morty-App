@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C403CDC42A612DD300778C51 /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C403CDC32A612DD300778C51 /* RMFooterLoadingCollectionReusableView.swift */; };
+		C46B651E2A67D55B0064B8E3 /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46B651D2A67D55B0064B8E3 /* RMImageLoader.swift */; };
 		C4C24BB92A52C04100222F9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C24BB82A52C04100222F9C /* AppDelegate.swift */; };
 		C4C24BBB2A52C04100222F9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C24BBA2A52C04100222F9C /* SceneDelegate.swift */; };
 		C4C24BBD2A52C04100222F9C /* RMTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C24BBC2A52C04100222F9C /* RMTabBarViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		C403CDC32A612DD300778C51 /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		C46B651D2A67D55B0064B8E3 /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 		C4C24BB52A52C04100222F9C /* Rick-And-Morty-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick-And-Morty-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C24BB82A52C04100222F9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C24BBA2A52C04100222F9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		C4C24BCD2A52CC5200222F9C /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				C46B651D2A67D55B0064B8E3 /* RMImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				C4C24BBD2A52C04100222F9C /* RMTabBarViewController.swift in Sources */,
 				C4DC04672A5BFE86003D3DA5 /* RMCharacterCollectionViewCell.swift in Sources */,
 				C4C24BE42A52D12300222F9C /* RMEpisodeViewController.swift in Sources */,
+				C46B651E2A67D55B0064B8E3 /* RMImageLoader.swift in Sources */,
 				C4C24BB92A52C04100222F9C /* AppDelegate.swift in Sources */,
 				C4C24BBB2A52C04100222F9C /* SceneDelegate.swift in Sources */,
 				C4C24BE82A52D14F00222F9C /* RMSettingsViewController.swift in Sources */,
