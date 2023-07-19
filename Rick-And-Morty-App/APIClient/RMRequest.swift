@@ -65,6 +65,8 @@ final class RMRequest {
         self.queryParameters = queryParameters
     }
     /// This code is a convenient initialiser that takes a URL and processes it to initialise an object based on its structure and content. The code checks if the URL meets certain conditions and then performs a string analysis to extract relevant information for the initialisation of the object.
+    ///  Attempt to create request
+    ///  - Parameter url: URL to parse
     convenience init?(url: URL) {
         let string = url.absoluteString
         if !string.contains(Constants.baseUrl) {

@@ -14,7 +14,17 @@ final class RMCharacterDetailViewViewModel {
         self.character = character
     }
     
+    private var requestUrl: URL? {
+        return URL(string: character.url)
+    }
+    
     var title: String {
         character.name.uppercased()
+    }
+    
+    func fetchCharacterData() {
+        guard let url = requestUrl, let request = RMRequest(url: url) else {
+            return
+        }
     }
 }
