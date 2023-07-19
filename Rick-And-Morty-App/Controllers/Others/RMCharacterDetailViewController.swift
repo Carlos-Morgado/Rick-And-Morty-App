@@ -28,7 +28,7 @@ final class RMCharacterDetailViewController: UIViewController {
         view.addSubview(detailView)
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(didTapShare))
         addConstraints()
-        viewModel.fetchCharacterData()
+        // viewModel.fetchCharacterData()
     }
     
     
