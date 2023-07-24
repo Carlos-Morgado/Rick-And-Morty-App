@@ -8,7 +8,11 @@
 import Foundation
 
 final class RMCharacterInformationCollectionViewCellViewModel {
-    init() {
-        
+    let value: String
+    let title: String
+    
+    init(value: String, title: String) {
+        self.value = value
+        self.title = title
     }
 }
